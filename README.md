@@ -18,3 +18,14 @@ cargo generate --git https://github.com/yewstack/yew-trunk-minimal-template
 cargo new yew-app
 cd yew-app
 ```
+#### Update Cargo.toml
+```Script
+[package]
+name = "yew-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# this is the development version of Yew
+yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
+```
