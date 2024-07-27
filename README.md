@@ -29,3 +29,13 @@ edition = "2021"
 # this is the development version of Yew
 yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
 ```
+#### Create Trunk.toml
+```Script
+[serve]
+# The address to serve on LAN.
+address = "127.0.0.1"
+# The address to serve on WAN.
+# address = "0.0.0.0"
+# The port to serve on.
+port = 8000
+```
