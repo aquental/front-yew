@@ -7,7 +7,7 @@ rustup target add wasm32-unknown-unknown
 cargo install --locked trunk
 ```
 
-#### Install cargo-generate
+#### Install [cargo-generate](https://github.com/cargo-generate/cargo-generate)
 ```Script
 cargo install cargo-generate
 ```
