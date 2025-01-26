@@ -1,24 +1,30 @@
 # Front Yew
+
 Front demo using Rust and WASM
 
 #### Install [Trunk](https://trunkrs.dev/)
+
 ```Script
 rustup target add wasm32-unknown-unknown
 cargo install --locked trunk
 ```
 
 #### Install [cargo-generate](https://github.com/cargo-generate/cargo-generate)
+
 ```Script
 cargo install cargo-generate
 ```
 
 #### Generate yew skeleton app
+
 ```Script
 cargo generate --git https://github.com/yewstack/yew-trunk-minimal-template
 cargo new yew-app
 cd yew-app
 ```
+
 #### Update Cargo.toml
+
 ```Script
 [package]
 name = "yew-app"
@@ -29,7 +35,9 @@ edition = "2021"
 # this is the development version of Yew
 yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
 ```
+
 #### Create Trunk.toml
+
 ```Script
 [serve]
 # The address to serve on LAN.
@@ -40,5 +48,13 @@ address = "127.0.0.1"
 port = 8000
 ```
 
+#### Building
+
+```
+cargo build
+trunk serve --open
+```
+
 #### App
+
 here
